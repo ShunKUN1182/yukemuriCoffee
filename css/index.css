@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+}
+
+header img{
+    /* width: 300px; */
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 242px;
+}
+
+header ul{
+    display: flex;
+    list-style-type: none;
+    gap: 56px;
+    font-size: 20px;
+    font-weight: bold;
+    height: 100px;
+}
+
+header li{
+    height: 100%;
+    line-height: 100px;
+}
+
+header ul a:link,
+header ul a:visited{
+    text-decoration: none;
+    color: #000;
+}
