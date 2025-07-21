@@ -5,6 +5,8 @@
 
 header{
     display: flex;
+    /* z-index: 2; */
+    background-color: rgba(255,255,255,0.7);
 }
 
 header img{
@@ -34,3 +36,18 @@ header ul a:visited{
     text-decoration: none;
     color: #000;
 }
+
+#mainVisual{
+    width: 1440px;
+    height: 880px;
+}
+
+#onsenContent{
+    background-color: #7D3333;
+}
+
+#kemuri{
+    width: 1500px;
+    height: 500px;
+}
+
