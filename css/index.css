@@ -8,7 +8,7 @@ header{
     justify-content: space-between;
     background-color: rgba(255,255,255,0.7);
     position: absolute;
-    width: 100%;
+    width: 100vw;
     z-index: 2;
     top: 0;
     left: 0;
@@ -63,6 +63,7 @@ main{
 
 .onsenContent{
     background-color: #7D3333;
+    width: 100vw;
 }
 
 .kemuri img{
@@ -71,3 +72,127 @@ main{
     height: 500px;
 }
 
+.naturalOnsen{
+    margin: 40px 20px 0;
+    display: flex;
+    width: 100%;
+}
+
+.naturalOnsenFont{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.naturalOnsen img{
+    width: 600px;
+    height: auto;
+}
+
+.naturalOnsenFont h1{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 36px;
+    height: 105px;
+    line-height: 105px;
+}
+
+.fontLogo{
+    display: flex;
+    background-color: #411A1A;
+}
+
+.naturalOnsenFont img{
+    width: 100px;
+    height: auto;
+    margin: 20px 35px;
+}
+
+.naturalOnsenFont p{
+    color: #FFFFFF;
+    font-size: 16px;
+    margin: 50px 40px;
+}
+
+.naturalOnsenFont h2{
+    margin-top: 80px;
+    margin-left: 40px;
+}
+
+.naturalOnsenFont a{
+    background-color: #D1BB75;
+    padding: 10px 45px;
+    border-radius: 20px;
+}
+
+.naturalOnsenFont a:link ,
+.naturalOnsenFont a:visited{
+    color: #000;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.naturalOnsenFont a:hover{
+    background-color: #E2D5AB;
+}
+
+.openOnsen{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 80px;
+}
+
+.openOnsen img{
+    margin-right: 20px;
+}
+
+.openOnsen h1{
+    font-weight: bold;
+    font-size: 36px;
+    height: 105px;
+    line-height: 105px;
+    color: #FFF;
+}
+
+.openOnsenFont{
+    width: 100%;
+}
+
+.openFontLogo{
+    background-color: #411A1A;
+    display: flex;
+}
+
+.openFontLogo img{
+    margin: 10px 45px;
+}
+
+.openOnsenFont p{
+    margin: 50px 40px;
+    color: #FFF;
+    font-size: 16px;
+}
+
+.openOnsenFont h2{
+    margin-top: 80px;
+    margin-left: 40px;
+}
+
+.openOnsenFont a{
+    background-color: #D1BB75;
+    padding: 10px 45px;
+    border-radius: 20px;
+}
+
+.openOnsenFont a:link ,
+.openOnsenFont a:visited{
+    color: #000;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.openOnsenFont a:hover{
+    background-color: #E2D5AB;
+}
