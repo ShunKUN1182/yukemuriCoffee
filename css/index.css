@@ -5,8 +5,13 @@
 
 header{
     display: flex;
-    /* z-index: 2; */
+    justify-content: space-between;
     background-color: rgba(255,255,255,0.7);
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+    left: 0;
 }
 
 header img{
@@ -14,7 +19,6 @@ header img{
     height: 100px;
     margin-top: 10px;
     margin-left: 20px;
-    margin-right: 242px;
 }
 
 header ul{
@@ -24,6 +28,8 @@ header ul{
     font-size: 20px;
     font-weight: bold;
     height: 100px;
+    margin-right: 50px;
+    margin-top: 10px;
 }
 
 header li{
@@ -37,17 +43,31 @@ header ul a:visited{
     color: #000;
 }
 
-#mainVisual{
-    width: 1440px;
-    height: 880px;
+.mainVisual{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("../images/mainVisual_01.jpeg");
+    background-position: contain;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; */
 }
 
-#onsenContent{
+main{
+    position: relative;
+}
+
+.onsenContent{
     background-color: #7D3333;
 }
 
-#kemuri{
-    width: 1500px;
+.kemuri img{
+    display: block;
+    width: 100%;
     height: 500px;
 }
 
