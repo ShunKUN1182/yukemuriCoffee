@@ -63,6 +63,7 @@ header ul a:visited{
 
 main{
     position: relative;
+    background-color: #FFFFED;
 }
 
 /* ここから温泉 */
@@ -293,15 +294,94 @@ main{
 
 .logoHeader img{
     margin: 30px auto 100px;
+
 }
 
 .coffeeConcept{
     display: flex;
-    margin: 0 220px;
+    justify-content: center;
+}
+
+.coffeeConcept img{
+    border-radius: 20px;
 }
 
 .coffeeConceptFont{
     display: flex;
     flex-direction: column;
-    height: ;
+    margin: auto 0 auto 80px;
+    gap: 10px;
+}
+
+.coffeeConceptFont h2{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.coffeeConceptFont p{
+    font-size: 16px;
+    width: 600px;
+}
+
+.coffeeCommitment{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+
+.coffeeCommitment img{
+    border-radius: 20px;
+}
+
+.coffeeCommitmentFont{
+    display: flex;
+    flex-direction: column;
+    margin: auto 80px auto 0;
+    gap: 10px;
+}
+
+.coffeeCommitmentFont h2{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.coffeeCommitmentFont p{
+    font-size: 16px;
+    width: 600px;
+}
+
+
+/* ここからニュースゾーン */
+
+.news{
+    background-color: #FFFFED;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    margin: 0 auto;
+}
+
+.newsHead{
+    display: flex;
+    border-bottom: 1px solid #000;
+
+}
+
+.newsContent{
+    display: flex;
+    flex-direction: column;
+}
+
+.newsHead h1{
+    font-size: 36px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.newsHead p{
+    font-size: 24px;
+    color: #818181;
+    font-weight: 800;
 }
