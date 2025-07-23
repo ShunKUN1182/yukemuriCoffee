@@ -355,7 +355,7 @@ main{
 /* ここからニュースゾーン */
 
 .news{
-    background-color: #FFFFED;
+    /* background-color: #FFFFED; */
     width: 1000px;
     display: flex;
     flex-direction: column;
@@ -366,7 +366,7 @@ main{
 .newsHead{
     display: flex;
     border-bottom: 1px solid #000;
-
+    align-items: center;
 }
 
 .newsContent{
@@ -382,7 +382,6 @@ main{
     font-weight: bold;
     border-left: #087E0E 15px solid;
     padding-left: 15px;
-
 }
 
 .newsHead p{
@@ -418,3 +417,58 @@ main{
     font-weight: bold;
     margin-top: 15px;
 }
+
+.map{
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto 0;
+    padding-bottom: 60px;
+}
+
+.mapHead{
+    display: flex;
+    border-bottom: 1px solid #000;
+    align-items: center;
+}
+
+.mapHead h1{
+    font-size: 36px;
+    margin: 10px 10px 10px 0;
+    font-weight: bold;
+    border-left: #A90808 15px solid;
+    padding-left: 15px;
+}
+
+.mapHead p{
+    font-size: 24px;
+    color: #818181;
+    font-weight: 800;
+}
+
+.mapFont{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.mapFont p{
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.mapFont ul{
+    list-style-type: none;
+}
+
+.mapFont li{
+    line-height: 30px;
+}
+
+/* メインはここまで */
+
+
+
+/* フッターはここから */
+
