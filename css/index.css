@@ -295,3 +295,13 @@ main{
     margin: 30px auto 100px;
 }
 
+.coffeeConcept{
+    display: flex;
+    margin: 0 220px;
+}
+
+.coffeeConceptFont{
+    display: flex;
+    flex-direction: column;
+    height: ;
+}
