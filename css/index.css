@@ -80,9 +80,10 @@ main{
 }
 
 .naturalOnsen{
-    margin: 40px 20px 0;
+    margin: 40px 0 0;
     display: flex;
-    width: 100%;
+    padding: 0 20px;
+    /* width: 100%; */
 }
 
 .naturalOnsenFont{
@@ -148,11 +149,9 @@ main{
     display: flex;
     flex-direction: row-reverse;
     margin-top: 80px;
+    padding: 0 20px;
 }
 
-.openOnsen img{
-    margin-right: 20px;
-}
 
 .openOnsen h1{
     font-weight: bold;
@@ -205,9 +204,10 @@ main{
 }
 
 .rock{
-    margin: 40px 20px 120px;
+    margin: 40px 0 120px;
     display: flex;
-    width: 100%;
+    /* width: calc(100%-40px); */
+    padding: 0 20px;
 }
 
 .rockFont{
@@ -471,4 +471,15 @@ main{
 
 
 /* フッターはここから */
+
+footer{
+    background-color: #4B2424;
+    /* display: flex; */
+}
+
+.footerLogos{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
 
