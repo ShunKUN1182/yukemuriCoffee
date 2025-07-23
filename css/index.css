@@ -423,7 +423,7 @@ main{
     display: flex;
     flex-direction: column;
     margin: 100px auto 0;
-    padding-bottom: 60px;
+    padding-bottom: 100px;
 }
 
 .mapHead{
@@ -474,12 +474,37 @@ main{
 
 footer{
     background-color: #4B2424;
-    /* display: flex; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .footerLogos{
     display: flex;
-    justify-content: center;
     gap: 80px;
+    justify-content: center;
+    margin: 45px 0 60px;
 }
 
+.footerFont ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    gap: 60px;
+}
+
+.footerFont li a:link,
+.footerFont li a:visited{
+    color: #FFF;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footerAddress{
+    margin: 50px auto;
+    color: #B3B0B0;
+    font-size: 20px;
+    font-weight: normal;
+    text-decoration: none;
+}
