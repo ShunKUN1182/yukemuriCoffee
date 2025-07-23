@@ -3,6 +3,8 @@
     margin: 0;
 }
 
+/* ここからヘッダー */
+
 header{
     display: flex;
     justify-content: space-between;
@@ -43,6 +45,8 @@ header ul a:visited{
     color: #000;
 }
 
+/* ここからメイン */
+
 .mainVisual{
     width: 100%;
     min-height: 100vh;
@@ -60,6 +64,8 @@ header ul a:visited{
 main{
     position: relative;
 }
+
+/* ここから温泉 */
 
 .onsenContent{
     background-color: #7D3333;
@@ -196,3 +202,96 @@ main{
 .openOnsenFont a:hover{
     background-color: #E2D5AB;
 }
+
+.rock{
+    margin: 40px 20px 120px;
+    display: flex;
+    width: 100%;
+}
+
+.rockFont{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.rock img{
+    width: 600px;
+    height: auto;
+}
+
+.rockFont h1{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 36px;
+    height: 105px;
+    line-height: 105px;
+}
+
+.rockFontLogo{
+    display: flex;
+    background-color: #411A1A;
+}
+
+.rockFont img{
+    width:  60px;
+    height: auto;
+    margin: 20px 35px;
+}
+
+.rockFont p{
+    color: #FFFFFF;
+    font-size: 16px;
+    margin: 50px 40px;
+}
+
+.rockFont h2{
+    margin-top: 80px;
+    margin-left: 40px;
+}
+
+.rockFont a{
+    background-color: #D1BB75;
+    padding: 10px 45px;
+    border-radius: 20px;
+}
+
+.rockFont a:link ,
+.rockFont a:visited{
+    color: #000;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.rockFont a:hover{
+    background-color: #E2D5AB;
+}
+
+.onsenContent{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* ここから湯けむりコーヒー */
+
+.coffeeContent{
+    background-color: #BF9999;
+}
+
+.logoHeader{
+    display: flex;
+    flex-direction: column;
+}
+
+.logoHeader h1{
+    margin: 120px auto 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logoHeader img{
+    margin: 30px auto 100px;
+}
+
