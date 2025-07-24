@@ -35,11 +35,14 @@ header ul{
     height: 100px;
     margin-right: 50px;
     margin-top: 10px;
+    align-items: center;
 }
 
 header li{
     height: 100%;
     line-height: 100px;
+    display: flex;
+    align-items: center;
 }
 
 header ul a:link,
@@ -47,6 +50,63 @@ header ul a:visited{
     text-decoration: none;
     color: #000;
 }
+
+/* トグルゾーン */
+
+
+.toggle-button-4 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    box-sizing: content-box;
+    background-color: #80000033;
+    cursor: pointer;
+    transition: background-color .4s;
+}
+
+.toggle-button-4:has(:checked) {
+    background-color: #00000033;
+}
+
+.toggle-button-4::before {
+    position: absolute;
+    left: 5px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #800000;
+    content: '';
+    transition: left .4s;
+}
+
+.toggle-button-4:has(:checked)::before {
+    left: 50px;
+    background-color: #000000;
+}
+
+.toggle-button-4::after {
+    position: absolute;
+    left: 26px;
+    transform: translateX(-50%);
+    color: #fff;
+    font-weight: 600;
+    font-size: .9em;
+    content: '明';
+    transition: left .4s;
+}
+
+.toggle-button-4:has(:checked)::after {
+    left: 71px;
+    content: '暗';
+}
+
+.toggle-button-4 input {
+    display: none;
+}
+
 
 /* ここからメイン */
 
