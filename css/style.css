@@ -1,0 +1,580 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: serif;
+}
+
+/* ここからヘッダー */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255,255,255,0.7);
+    /* background-color: #000; */
+    position: absolute;
+    /* width: calc(100%-20px); */
+    width: 100%;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+header img{
+    /* width: 300px; */
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+header ul{
+    display: flex;
+    list-style-type: none;
+    gap: 56px;
+    font-size: 20px;
+    font-weight: bold;
+    height: 100px;
+    margin-right: 50px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+header li{
+    height: 100%;
+    line-height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+header ul a:link,
+header ul a:visited{
+    text-decoration: none;
+    color: #000;
+}
+
+/* トグルゾーン */
+
+
+.toggle-button-4 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    box-sizing: content-box;
+    background-color: #80000033;
+    cursor: pointer;
+    transition: background-color .4s;
+}
+
+.toggle-button-4:has(:checked) {
+    background-color: #00000033;
+}
+
+.toggle-button-4::before {
+    position: absolute;
+    left: 5px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #800000;
+    content: '';
+    transition: left .4s;
+}
+
+.toggle-button-4:has(:checked)::before {
+    left: 50px;
+    background-color: #000000;
+}
+
+.toggle-button-4::after {
+    position: absolute;
+    left: 26px;
+    transform: translateX(-50%);
+    color: #fff;
+    font-weight: 600;
+    font-size: .9em;
+    content: '明';
+    transition: left .4s;
+}
+
+.toggle-button-4:has(:checked)::after {
+    left: 71px;
+    content: '暗';
+}
+
+.toggle-button-4 input {
+    display: none;
+}
+
+
+/* ここからメイン */
+
+.mainVisual{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("../images/mainVisual_01.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; */
+}
+
+main{
+    position: relative;
+    background-color: #FFFFED;
+}
+
+/* ここから温泉 */
+
+.onsenContent{
+    background-color: #7D3333;
+    /* width: 100; */
+}
+
+.kemuri img{
+    display: block;
+    width: 100%;
+    height: 500px;
+}
+
+.naturalOnsen{
+    margin: 40px 0 0;
+    display: flex;
+    padding: 0 20px;
+    /* width: 100%; */
+}
+
+.naturalOnsenFont{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.naturalOnsen img{
+    width: 600px;
+    height: auto;
+}
+
+.naturalOnsenFont h1{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 36px;
+    height: 105px;
+    line-height: 105px;
+}
+
+.fontLogo{
+    display: flex;
+    background-color: #411A1A;
+}
+
+.naturalOnsenFont img{
+    width: 100px;
+    height: auto;
+    margin: 20px 35px;
+}
+
+.naturalOnsenFont p{
+    color: #FFFFFF;
+    font-size: 16px;
+    margin: 50px 40px;
+}
+
+.naturalOnsenFont h2{
+    margin-top: 80px;
+    margin-left: 40px;
+}
+
+.naturalOnsenFont a{
+    background-color: #D1BB75;
+    padding: 10px 45px;
+    border-radius: 20px;
+}
+
+.naturalOnsenFont a:link ,
+.naturalOnsenFont a:visited{
+    color: #000;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.naturalOnsenFont a:hover{
+    background-color: #E2D5AB;
+}
+
+.openOnsen{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 80px;
+    padding: 0 20px;
+}
+
+
+.openOnsen h1{
+    font-weight: bold;
+    font-size: 36px;
+    height: 105px;
+    line-height: 105px;
+    color: #FFF;
+}
+
+.openOnsenFont{
+    width: 100%;
+}
+
+.openFontLogo{
+    background-color: #411A1A;
+    display: flex;
+}
+
+.openFontLogo img{
+    margin: 10px 45px;
+}
+
+.openOnsenFont p{
+    margin: 50px 40px;
+    color: #FFF;
+    font-size: 16px;
+}
+
+.openOnsenFont h2{
+    margin-top: 80px;
+    margin-left: 40px;
+}
+
+.openOnsenFont a{
+    background-color: #D1BB75;
+    padding: 10px 45px;
+    border-radius: 20px;
+}
+
+.openOnsenFont a:link ,
+.openOnsenFont a:visited{
+    color: #000;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.openOnsenFont a:hover{
+    background-color: #E2D5AB;
+}
+
+.rock{
+    margin: 40px 0 120px;
+    display: flex;
+    /* width: calc(100%-40px); */
+    padding: 0 20px;
+}
+
+.rockFont{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.rock img{
+    width: 600px;
+    height: auto;
+}
+
+.rockFont h1{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 36px;
+    height: 105px;
+    line-height: 105px;
+}
+
+.rockFontLogo{
+    display: flex;
+    background-color: #411A1A;
+}
+
+.rockFont img{
+    width:  60px;
+    height: auto;
+    margin: 20px 35px;
+}
+
+.rockFont p{
+    color: #FFFFFF;
+    font-size: 16px;
+    margin: 50px 40px;
+}
+
+.rockFont h2{
+    margin-top: 80px;
+    margin-left: 40px;
+}
+
+.rockFont a{
+    background-color: #D1BB75;
+    padding: 10px 45px;
+    border-radius: 20px;
+}
+
+.rockFont a:link ,
+.rockFont a:visited{
+    color: #000;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.rockFont a:hover{
+    background-color: #E2D5AB;
+}
+
+.onsenContent{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* ここから湯けむりコーヒー */
+
+.coffeeContent{
+    background-color: #BF9999;
+}
+
+.logoHeader{
+    display: flex;
+    flex-direction: column;
+}
+
+.logoHeader h1{
+    margin: 120px auto 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logoHeader img{
+    margin: 30px auto 100px;
+
+}
+
+.coffeeConcept{
+    display: flex;
+    justify-content: center;
+}
+
+.coffeeConcept img{
+    border-radius: 20px;
+}
+
+.coffeeConceptFont{
+    display: flex;
+    flex-direction: column;
+    margin: auto 0 auto 80px;
+    gap: 10px;
+}
+
+.coffeeConceptFont h2{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.coffeeConceptFont p{
+    font-size: 16px;
+    width: 600px;
+}
+
+.coffeeCommitment{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+
+.coffeeCommitment img{
+    border-radius: 20px;
+}
+
+.coffeeCommitmentFont{
+    display: flex;
+    flex-direction: column;
+    margin: auto 80px auto 0;
+    gap: 10px;
+}
+
+.coffeeCommitmentFont h2{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.coffeeCommitmentFont p{
+    font-size: 16px;
+    width: 600px;
+}
+
+
+/* ここからニュースゾーン */
+
+.news{
+    /* background-color: #FFFFED; */
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    margin: 100px auto 0;
+}
+
+.newsHead{
+    display: flex;
+    border-bottom: 1px solid #000;
+    align-items: center;
+}
+
+.newsContent{
+    display: flex;
+    flex-direction: column;
+    border-bottom: #000 solid 1px;
+    padding-bottom: 30px;
+}
+
+.newsHead h1{
+    font-size: 36px;
+    margin: 10px 10px 10px 0;
+    font-weight: bold;
+    border-left: #087E0E 15px solid;
+    padding-left: 15px;
+}
+
+.newsHead p{
+    font-size: 24px;
+    color: #818181;
+    font-weight: 800;
+}
+
+.newsContentHead{
+    display: flex;
+    margin-top: 30px;
+    gap: 20px;
+    align-items: center;
+}
+
+.newsContentHead h2{
+    font-size: 16px;
+    color: #602C2C;
+    font-weight: normal;
+}
+
+.newsContentHead h3{
+    font-size: 16px;
+    color: #602C2C;
+    font-weight: normal;
+    border: #602C2C solid 1px;
+    border-radius: 20px;
+    padding: 2px 30px;
+}
+
+.newsContent p{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.map{
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto 0;
+    padding-bottom: 100px;
+}
+
+.mapHead{
+    display: flex;
+    border-bottom: 1px solid #000;
+    align-items: center;
+}
+
+.mapHead h1{
+    font-size: 36px;
+    margin: 10px 10px 10px 0;
+    font-weight: bold;
+    border-left: #A90808 15px solid;
+    padding-left: 15px;
+}
+
+.mapHead p{
+    font-size: 24px;
+    color: #818181;
+    font-weight: 800;
+}
+
+.mapFont{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.mapFont p{
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.mapFont ul{
+    list-style-type: none;
+}
+
+.mapFont li{
+    line-height: 30px;
+}
+
+/* メインはここまで */
+
+
+
+/* フッターはここから */
+
+footer{
+    background-color: #4B2424;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footerLogos{
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    margin: 45px 0 60px;
+}
+
+.footerFont ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    gap: 60px;
+}
+
+.footerFont li a:link,
+.footerFont li a:visited{
+    color: #FFF;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.footerAddress{
+    margin: 50px auto;
+    color: #B3B0B0;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+address{
+    font-family: sans-serif;
+    text-decoration: none;
+}
