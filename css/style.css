@@ -159,6 +159,14 @@ header li{
     margin: 0 auto;
     position: relative;
     z-index: 1;
+    transform-origin: center top;
+    animation: show 1s both;
+    /* animation-name: animations;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: initial; */
 }
 
 
@@ -172,6 +180,8 @@ main{
 .onsenContent{
     /* background-color: #7D3333; */
     /* width: 100; */
+    /* transform-origin: center top;
+    animation: show 1s both; */
 }
 
 .kemuri img{
@@ -185,7 +195,11 @@ main{
     display: flex;
     padding: 0 20px;
     /* width: 100%; */
+    /* transform-origin: center top;
+    animation: show 1s both; */
 }
+
+
 
 .naturalOnsenFont{
     display: flex;
@@ -259,6 +273,8 @@ main{
     flex-direction: row-reverse;
     margin-top: 80px;
     padding: 0 20px;
+    /* transform-origin: center top;
+    animation: show 1s both; */
 }
 
 
@@ -323,6 +339,8 @@ main{
     display: flex;
     /* width: calc(100%-40px); */
     padding: 0 20px;
+    /* transform-origin: center top;
+    animation: show 1s both; */
 }
 
 .rockFont{
@@ -400,6 +418,8 @@ main{
 
 .coffeeContent{
     /* background-color: #BF9999; */
+    /* transform-origin: center top;
+    animation: show 1s both; */
 }
 
 .logoHeader{
@@ -766,3 +786,25 @@ address{
     background-color: #411A1A;
     color: #FFF;
 }
+
+
+/* .dh{ animation-delay: .5s;}
+.d1{ animation-delay: 1s;}
+.d1h{ animation-delay: 1.5s;}
+.d2{ animation-delay: 2s;} */
+
+@keyframes show{
+    0%{
+        transform: translate(0,50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0,0);
+        opacity: 1;
+    }
+}
+/* 
+.anm{
+    transform-origin: center top;
+    animation: show 1s both;
+} */
