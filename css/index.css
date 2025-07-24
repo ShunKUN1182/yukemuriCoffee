@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: serif;
 }
 
 /* ここからヘッダー */
@@ -53,7 +54,9 @@ header ul a:visited{
     width: 100%;
     min-height: 100vh;
     background-image: url("../images/mainVisual_01.jpeg");
-    background-position: contain;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     margin: 0 auto;
     position: relative;
     z-index: 1;
@@ -501,6 +504,7 @@ footer{
     font-weight: bold;
     font-size: 20px;
     text-decoration: none;
+    font-family: sans-serif;
 }
 
 .footerAddress{
@@ -508,5 +512,9 @@ footer{
     color: #B3B0B0;
     font-size: 20px;
     font-weight: normal;
+}
+
+address{
+    font-family: sans-serif;
     text-decoration: none;
 }
