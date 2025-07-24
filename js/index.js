@@ -1,7 +1,8 @@
 console.log("foo");
 
 const toggle = document.querySelector("input");
-const onOff = document.querySelector("body");
+const lightDark = document.querySelector("body");
+const onOff = document.querySelectorAll("header>h1>img");
 
 
 console.log(onOff);
@@ -9,14 +10,16 @@ console.log(onOff);
 
 toggle.addEventListener("change" , function(){
 
-    if (onOff.classList.contains("off")) {
-        onOff.classList.add("on");
-        onOff.classList.remove("off");
+    if (lightDark.classList.contains("light")) {
+        lightDark.classList.add("dark");
+        lightDark.classList.remove("light");
+        // onOff.innerHTML = `"images/OnsenLogo_02.png"`
+
     }else{
-        onOff.classList.add("off");
-        onOff.classList.remove("on");
+        lightDark.classList.add("light");
+        lightDark.classList.remove("dark");
+        // onOff.innerHTML = `"images/logo_onsen.png"`
     }
-    
 
 });    
 

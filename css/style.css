@@ -4,9 +4,10 @@
     font-family: serif;
 }
 
+
 /* ここからヘッダー */
 
-header{
+.light header{
     display: flex;
     justify-content: space-between;
     background-color: rgba(255,255,255,0.7);
@@ -19,12 +20,44 @@ header{
     left: 0;
 }
 
+.dark header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+.light .onsenLogoImg{
+    background-image: url("../images/logo_onsen.png");
+    height: 80px;
+    width: 450px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 20px;
+}
+
+.dark .onsenLogoImg{
+    background-image: url("../images/OnsenLogo_02.png");
+    height: 80px;
+    width: 450px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 20px;
+}
+
+
+
 header img{
     /* width: 300px; */
     height: 100px;
     margin-top: 10px;
     margin-left: 20px;
 }
+
 
 header ul{
     display: flex;
@@ -45,11 +78,18 @@ header li{
     align-items: center;
 }
 
-header ul a:link,
-header ul a:visited{
+.light header ul a:link,
+.light header ul a:visited{
     text-decoration: none;
     color: #000;
 }
+
+.dark header ul a:link,
+.dark header ul a:visited{
+    text-decoration: none;
+    color: #FFF;
+}
+
 
 /* トグルゾーン */
 
@@ -62,13 +102,13 @@ header ul a:visited{
     height: 50px;
     border-radius: 50px;
     box-sizing: content-box;
-    background-color: #80000033;
+    background-color: #00000033;
     cursor: pointer;
     transition: background-color .4s;
 }
 
 .toggle-button-4:has(:checked) {
-    background-color: #00000033;
+    background-color: #87121233;
 }
 
 .toggle-button-4::before {
@@ -77,14 +117,14 @@ header ul a:visited{
     width: 42px;
     height: 42px;
     border-radius: 50%;
-    background-color: #800000;
+    background-color: #000000;
     content: '';
     transition: left .4s;
 }
 
 .toggle-button-4:has(:checked)::before {
     left: 50px;
-    background-color: #000000;
+    background-color: #871212;
 }
 
 .toggle-button-4::after {
@@ -107,7 +147,6 @@ header ul a:visited{
     display: none;
 }
 
-
 /* ここからメイン */
 
 .mainVisual{
@@ -120,21 +159,18 @@ header ul a:visited{
     margin: 0 auto;
     position: relative;
     z-index: 1;
-    /* position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1; */
 }
+
 
 main{
     position: relative;
-    background-color: #FFFFED;
+    /* background-color: #FFFFED; */
 }
 
 /* ここから温泉 */
 
 .onsenContent{
-    background-color: #7D3333;
+    /* background-color: #7D3333; */
     /* width: 100; */
 }
 
@@ -170,10 +206,18 @@ main{
     line-height: 105px;
 }
 
-.fontLogo{
+
+
+.light .fontLogo{
     display: flex;
     background-color: #411A1A;
 }
+
+.dark .fontLogo{
+    display: flex;
+    background-color: #905455;
+}
+
 
 .naturalOnsenFont img{
     width: 100px;
@@ -182,7 +226,7 @@ main{
 }
 
 .naturalOnsenFont p{
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
     font-size: 16px;
     margin: 50px 40px;
 }
@@ -230,10 +274,16 @@ main{
     width: 100%;
 }
 
-.openFontLogo{
+.light .openFontLogo{
     background-color: #411A1A;
     display: flex;
 }
+
+.dark .openFontLogo{
+    background-color: #905455;
+    display: flex;
+}
+
 
 .openFontLogo img{
     margin: 10px 45px;
@@ -241,7 +291,7 @@ main{
 
 .openOnsenFont p{
     margin: 50px 40px;
-    color: #FFF;
+    /* color: #FFF; */
     font-size: 16px;
 }
 
@@ -294,10 +344,16 @@ main{
     line-height: 105px;
 }
 
-.rockFontLogo{
+.light .rockFontLogo{
     display: flex;
     background-color: #411A1A;
 }
+
+.dark .rockFontLogo{
+    display: flex;
+    background-color: #905455;
+}
+
 
 .rockFont img{
     width:  60px;
@@ -306,7 +362,7 @@ main{
 }
 
 .rockFont p{
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
     font-size: 16px;
     margin: 50px 40px;
 }
@@ -343,12 +399,14 @@ main{
 /* ここから湯けむりコーヒー */
 
 .coffeeContent{
-    background-color: #BF9999;
+    /* background-color: #BF9999; */
 }
 
 .logoHeader{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
 .logoHeader h1{
@@ -359,8 +417,24 @@ main{
 
 .logoHeader img{
     margin: 30px auto 100px;
-
 }
+
+.light .logoImg{
+    background-image: url("../images/coffeeLogo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 500px;
+    height: 200px;
+}
+
+.dark .logoImg{
+    background-image: url("../images/coffeeLogo_02.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 500px;
+    height: 200px;
+}
+
 
 .coffeeConcept{
     display: flex;
@@ -434,12 +508,20 @@ main{
     align-items: center;
 }
 
-.newsContent{
+.light .newsContent{
     display: flex;
     flex-direction: column;
     border-bottom: #000 solid 1px;
     padding-bottom: 30px;
 }
+
+.dark .newsContent{
+    display: flex;
+    flex-direction: column;
+    border-bottom: #FFF solid 1px;
+    padding-bottom: 30px;
+}
+
 
 .newsHead h1{
     font-size: 36px;
@@ -449,11 +531,18 @@ main{
     padding-left: 15px;
 }
 
-.newsHead p{
+.light .newsHead p{
     font-size: 24px;
     color: #818181;
     font-weight: 800;
 }
+
+.dark .newsHead p{
+    font-size: 24px;
+    color: #DCD4D4;
+    font-weight: 800;
+}
+
 
 .newsContentHead{
     display: flex;
@@ -462,13 +551,13 @@ main{
     align-items: center;
 }
 
-.newsContentHead h2{
+.light .newsContentHead h2{
     font-size: 16px;
     color: #602C2C;
     font-weight: normal;
 }
 
-.newsContentHead h3{
+.light .newsContentHead h3{
     font-size: 16px;
     color: #602C2C;
     font-weight: normal;
@@ -476,6 +565,22 @@ main{
     border-radius: 20px;
     padding: 2px 30px;
 }
+
+.dark .newsContentHead h2{
+    font-size: 16px;
+    color: #DCD4D4;
+    font-weight: normal;
+}
+
+.dark .newsContentHead h3{
+    font-size: 16px;
+    color: #DCD4D4;
+    font-weight: normal;
+    border: #DCD4D4 solid 1px;
+    border-radius: 20px;
+    padding: 2px 30px;
+}
+
 
 .newsContent p{
     font-size: 24px;
@@ -491,11 +596,18 @@ main{
     padding-bottom: 100px;
 }
 
-.mapHead{
+.light .mapHead{
     display: flex;
     border-bottom: 1px solid #000;
     align-items: center;
 }
+
+.dark .mapHead{
+    display: flex;
+    border-bottom: 1px solid #FFF;
+    align-items: center;
+}
+
 
 .mapHead h1{
     font-size: 36px;
@@ -505,11 +617,18 @@ main{
     padding-left: 15px;
 }
 
-.mapHead p{
+.light .mapHead p{
     font-size: 24px;
     color: #818181;
     font-weight: 800;
 }
+
+.dark .mapHead p{
+    font-size: 24px;
+    color: #DCD4D4;
+    font-weight: 800;
+}
+
 
 .mapFont{
     display: flex;
@@ -537,19 +656,60 @@ main{
 
 /* フッターはここから */
 
-footer{
+.light footer{
     background-color: #4B2424;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+.dark footer{
+    background-color: #FFFFED;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
 .footerLogos{
     display: flex;
     gap: 80px;
     justify-content: center;
-    margin: 45px 0 60px;
+    margin: 45px 0 50px;
 }
+
+.light .onsenFooter{
+    background-image: url("../images/footerLogo_01.png");
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 55px;
+    background-position: contain;
+}
+
+.light .coffeeFooter{
+    background-image: url("../images/footerLogo_02.png");
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 60px;
+    background-position: contain;
+}
+
+.dark .onsenFooter{
+    background-image: url("../images/onsenLogoBlock.png");
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 55px;
+    background-position: contain;
+}
+
+.dark .coffeeFooter{
+    background-image: url("../images/coffeeLogoBlock.png");
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 60px;
+    background-position: contain;
+}
+
 
 .footerFont ul{
     display: flex;
@@ -558,8 +718,8 @@ footer{
     gap: 60px;
 }
 
-.footerFont li a:link,
-.footerFont li a:visited{
+.light .footerFont li a:link,
+.light .footerFont li a:visited{
     color: #FFF;
     font-weight: bold;
     font-size: 20px;
@@ -567,14 +727,42 @@ footer{
     font-family: sans-serif;
 }
 
-.footerAddress{
+.dark .footerFont li a:link,
+.dark .footerFont li a:visited{
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+
+.light .footerAddress{
     margin: 50px auto;
     color: #B3B0B0;
     font-size: 20px;
     font-weight: normal;
 }
 
+.dark .footerAddress{
+    margin: 50px auto;
+    color: #555;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+
 address{
     font-family: sans-serif;
     text-decoration: none;
+}
+
+.light{
+    background-color: #FFFFED;
+    color: #000;
+}
+
+.dark{
+    background-color: #411A1A;
+    color: #FFF;
 }
