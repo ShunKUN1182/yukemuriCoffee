@@ -177,12 +177,6 @@ main{
 
 /* ここから温泉 */
 
-.onsenContent{
-    /* background-color: #7D3333; */
-    /* width: 100; */
-    /* transform-origin: center top;
-    animation: show 1s both; */
-}
 
 .kemuri img{
     display: block;
@@ -810,8 +804,8 @@ address{
         opacity: 1;
     }
 }
-/* 
-.anm{
+
+.animation{
     transform-origin: center top;
     animation: show 1s both;
-} */
+}

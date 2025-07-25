@@ -7,6 +7,7 @@ const targetA = document.querySelector(".onsenContent");
 const targetB = document.querySelector(".coffeeContent");
 const targetC = document.querySelector("news");
 const targetD = document.querySelector("map");
+const anm = document.querySelectorAll(".anm");
 
 
 
@@ -26,25 +27,19 @@ toggle.addEventListener("change" , function(){
 
 });    
 
-// addEventListener("scroll", function(){
+addEventListener("scroll", function(){
 
-//     for(let i = 0; i = 4; i++){
+    for(let i = 0; i = anm.length; i++){
         
-//         const getElemantA = targetA.getBoundingClienRect().top;
-//         const getElemantB = targetB.getBoundingClienRect().top;
-//         const getElemantC = targetC.getBoundingClienRect().top;
-//         const getElemantD = targetD.getBoundingClienRect().top;
+        const getElemant = anm.getBoundingClienRect().top;
 
-//         }
-//     })
+        if (window.innerHeight > getElement) {
+            anm[i].classList.add("animation");
+        }
+
+    }
+})    
     
 
-//     if ( >= 500) {
-//         targetA.classList.add("anm d1");
-//     }else if (getElemant >= 950) {
-//         targetB.classList.add("anm d1");
-//     }
-
-// })
 
 
