@@ -23,7 +23,7 @@
 .dark header{
     display: flex;
     justify-content: space-between;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.5);
     position: absolute;
     width: 100%;
     z-index: 2;
@@ -522,11 +522,18 @@ main{
     margin: 100px auto 0;
 }
 
-.newsHead{
+.light .newsHead{
     display: flex;
     border-bottom: 1px solid #000;
     align-items: center;
 }
+
+.dark .newsHead{
+    display: flex;
+    border-bottom: 1px solid #FFF;
+    align-items: center;
+}
+
 
 .light .newsContent{
     display: flex;
