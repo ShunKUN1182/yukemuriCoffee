@@ -11,9 +11,7 @@
     display: flex;
     justify-content: space-between;
     background-color: rgba(255,255,255,0.7);
-    /* background-color: #000; */
     position: absolute;
-    /* width: calc(100%-20px); */
     width: 100%;
     z-index: 2;
     top: 0;
@@ -152,16 +150,34 @@ header li{
 .mainVisual{
     width: 100%;
     min-height: 100vh;
-    background-image: url("../images/mainVisual_01.png");
+    /* background-image: url("../images/mainVisual_01.png");
     background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     margin: 0 auto;
     position: relative;
     z-index: 1;
     animation: show 2s forwards;
 }
 
+.mainVisual img{
+    width: 100%;
+    min-height: 100vh;
+    size: cover;
+}
+
+.mainVisual ul{
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.mainVisual li{
+    position: absolute;
+    transition: 1s;
+    opacity: 0;
+}
 
 main{
     position: relative;
@@ -253,6 +269,7 @@ main{
 
 .naturalOnsenFont a:hover{
     background-color: #E2D5AB;
+    transition: 1s;
 }
 
 .openOnsen{
@@ -321,6 +338,7 @@ main{
 
 .openOnsenFont a:hover{
     background-color: #E2D5AB;
+    transition: 1s;
 }
 
 .rock{
@@ -393,13 +411,14 @@ main{
 
 .rockFont a:hover{
     background-color: #E2D5AB;
+    transition: 1s;
 }
 
 .onsenContent{
     display: flex;
     flex-direction: column;
     gap: 40px;
-    opacity: 0;
+    /* opacity: 0; */
 }
 
 /* ここから湯けむりコーヒー */
@@ -799,6 +818,17 @@ address{
     }
 }
 
+@keyframes btn{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.7;
+    }
+}
+
 .animation{
     animation: show 2s forwards;
 }
+
+
