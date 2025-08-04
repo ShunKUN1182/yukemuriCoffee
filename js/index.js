@@ -32,7 +32,7 @@ toggle.addEventListener("change" , function(){
 
 setInterval( () => {
 
-    console.log("foo");
+    // console.log("foo");
 
     for(i = 0; i >= maxCount; i++){
         sliderImg[i].style.opacity = 0;
