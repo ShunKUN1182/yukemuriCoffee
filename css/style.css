@@ -92,7 +92,7 @@ header ul li a {
     color: #FFF;
 }
 
-header ul a::after {
+.light header ul a::after{
     content: "";
     width: 100%;
     height: 2px;
@@ -105,7 +105,24 @@ header ul a::after {
     transition: 0.5s;
 }
 
-header ul a:hover::after {
+.light header ul a:hover::after {
+    transform: scale(1,1);
+}
+
+.dark header ul a::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #FFF;
+    position: absolute;
+    left: 0;
+    bottom: -10%;
+    transform: scale(0, 1);
+    transform-origin: left;
+    transition: 0.5s;
+}
+
+.dark header ul a:hover::after {
     transform: scale(1,1);
 }
 

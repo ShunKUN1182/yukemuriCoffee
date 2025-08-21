@@ -8,6 +8,7 @@ const sliderImg = document.querySelectorAll(".mainVisual>ul>li");
 const maxCount = sliderImg.length - 1;
 const delay = 5000;
 let imagesCount = 0;
+const check = document.querySelector("input");
 
 // const observer = document.querySelector(".observer");
 
@@ -15,6 +16,21 @@ console.log(sliderImg , maxCount);
 
 
 sliderImg[0].style.opacity = 1;
+
+const time = new Date();
+const hours = time.getHours();
+console.log(hours);
+
+
+if (hours >= 18 || hours < 3) {
+    console.log("よるです");
+    lightDark.classList.add("dark");
+    check.checked = true;
+}else{
+    console.log("ひるです");
+    lightDark.classList.add("light");
+}
+
 
 
 toggle.addEventListener("change" , function(){
