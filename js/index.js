@@ -19,15 +19,16 @@ sliderImg[0].style.opacity = 1;
 
 const time = new Date();
 const hours = time.getHours();
+// const hours = 4;
 console.log(hours);
 
 
-if (hours >= 18 || hours < 3) {
-    console.log("よるです");
+if (hours >= 18 || hours < 4) {
+    console.log("night");
     lightDark.classList.add("dark");
     check.checked = true;
 }else{
-    console.log("ひるです");
+    console.log("noon");
     lightDark.classList.add("light");
 }
 
