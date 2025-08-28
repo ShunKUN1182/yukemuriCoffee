@@ -10,6 +10,10 @@ const delay = 5000;
 let imagesCount = 0;
 const check = document.querySelector("input");
 
+const themeColor = localStorage.getItem("mode");
+console.log(themeColor);
+
+
 // const observer = document.querySelector(".observer");
 
 console.log(sliderImg , maxCount);
@@ -39,11 +43,14 @@ toggle.addEventListener("change" , function(){
     if (lightDark.classList.contains("light")) {
         lightDark.classList.add("dark");
         lightDark.classList.remove("light");
+        localStorage.setItem("mode" , "dark");
 
     }else{
         lightDark.classList.add("light");
         lightDark.classList.remove("dark");
+        localStorage.setItem("mode" , "light");
     }
+
 
 });    
 

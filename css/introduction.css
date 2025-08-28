@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     font-family: serif;
-    background-color: #FFFFED;
 }
 
 /* ここからヘッダー */
@@ -17,7 +16,8 @@ header{
     left: 0;
 }
 
-.onsenLogoImg{
+.onsenLogoImg a{
+    display: block;
     background-image: url("../images/logo_onsen.png");
     height: 80px;
     width: 450px;
@@ -26,6 +26,11 @@ header{
     margin: 20px;
     background-color: #FFF;
 }
+
+/* onsenLogoImg a{
+    height: 80px;
+    width: 450px;
+} */
 
 header ul{
     display: flex;
@@ -132,7 +137,31 @@ header ul a:hover::after {
 
 /* ここからメイン/ */
 
-.bennerImg {
+/* .benner h1{
+    background-image: url("../images/benner_01.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 20vh;
+    line-height: 20vh;
+    color: #fefefe;
+    text-align: center;
+} */
+main{
+    background-color: #FFFFED;
+}
+
+.benner h1{
+    width: 100%;
+    height: 20vh;
+    background: linear-gradient(rgba(0,0,0,0.6)),
+    no-repeat url("../images/benner_01.png") center top / cover;
+    color: #fff;
+    text-align: center;
+    line-height: 20vh;
+}
+
+/* .benner {
     background-image: url("../images/benner_01.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -143,11 +172,11 @@ header ul a:hover::after {
 
 
 .benner h1{
-    color: #FFF;
+    color: tomato;
     position: absolute;
     top: auto;
     left: auto;
-}
+} */
 
 .yukemuriCoffee{
     display: flex;
@@ -177,9 +206,9 @@ header ul a:hover::after {
 }
 
 .yukemuriCoffeeFont a{
-    padding: 15px 60px;
+    padding: 15px 50px;
     background-color: #D1BB75;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .yukemuriCoffeeFont a:link,
@@ -188,5 +217,137 @@ header ul a:hover::after {
     color: #000;
 }
 
+.yukemuriCoffeeFont a:hover{
+    background-color: #E2D5AB;
+    transition: 1s;
+}
+
 /* 温泉ゾーンです */
 
+.onsenkyou{
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.onsenkyouFont{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 600px;
+}
+
+.onsenkyou img{
+    width: 300px;
+    border-radius: 20px;
+}
+
+.onsenkyouFont p{
+    font-size: 20px;
+}
+
+.onsenkyouFont a{
+    padding: 15px 50px;
+    background-color: #D1BB75;
+    border-radius: 10px;
+}
+
+.onsenkyouFont a:link,
+.onsenkyouFont a:visited{
+    text-decoration: none;
+    color: #000;
+}
+
+.onsenkyouFont a:hover{
+    background-color: #E2D5AB;
+    transition: 1s;
+}
+
+.floorMap{
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto 0;
+    /* padding-bottom: 100px; */
+}
+
+.floorMapHead{
+    display: flex;
+    border-bottom: 1px solid #000;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.floorMapHead h2{
+    font-size: 36px;
+    margin: 10px 10px 10px 0;
+    font-weight: bold;
+    border-left: #A90808 15px solid;
+    padding-left: 15px;
+}
+
+.floorMapImg{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+
+footer{
+    background-color: #4B2424;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footerLogos{
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    margin: 45px 0 50px;
+}
+
+.onsenFooter{
+    background-image: url("../images/footerLogo_01.png");
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 55px;
+    background-position: contain;
+}
+
+.coffeeFooter{
+    background-image: url("../images/footerLogo_02.png");
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 60px;
+    background-position: contain;
+}
+
+.footerFont ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    gap: 60px;
+}
+
+.footerFont li a:link,
+.footerFont li a:visited{
+    color: #FFF;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.footerAddress{
+    margin: 50px auto;
+    color: #B3B0B0;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+address{
+    font-family: sans-serif;
+    text-decoration: none;
+}
