@@ -23,32 +23,35 @@ sliderImg[0].style.opacity = 1;
 
 const time = new Date();
 const hours = time.getHours();
-// const hours = 4;
+// const hours = 12;
 console.log(hours);
 
 
 if (hours >= 18 || hours < 4) {
-    console.log("night");
-    lightDark.classList.add("dark");
+    localStorage.setItem("mode" , "dark");
+    // lightDark.classList.add("dark");
     check.checked = true;
 }else{
     console.log("noon");
-    lightDark.classList.add("light");
+    localStorage.setItem("mode" , "light");
+    // lightDark.classList.add("light");
 }
+
+lightDark.classList.add(localStorage.getItem("mode"));
 
 
 
 toggle.addEventListener("change" , function(){
 
     if (lightDark.classList.contains("light")) {
+        localStorage.setItem("mode" , "dark");
         lightDark.classList.add("dark");
         lightDark.classList.remove("light");
-        localStorage.setItem("mode" , "dark");
 
     }else{
+        localStorage.setItem("mode" , "light");
         lightDark.classList.add("light");
         lightDark.classList.remove("dark");
-        localStorage.setItem("mode" , "light");
     }
 
 
