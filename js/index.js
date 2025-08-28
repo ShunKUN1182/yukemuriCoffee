@@ -9,8 +9,8 @@ const maxCount = sliderImg.length - 1;
 const delay = 5000;
 let imagesCount = 0;
 const check = document.querySelector("input");
-
 const themeColor = localStorage.getItem("mode");
+
 console.log(themeColor);
 
 
@@ -38,6 +38,7 @@ if (hours >= 18 || hours < 4) {
 }
 
 lightDark.classList.add(localStorage.getItem("mode"));
+// lightDark.classList.add(themeColor);
 
 
 
