@@ -19,7 +19,7 @@
 .dark header{
     display: flex;
     justify-content: space-between;
-    background-color: #000;
+    background-color: #333;
     width: 100%;
     z-index: 2;
     top: 0;
@@ -245,10 +245,6 @@ header ul a:hover::after {
     gap: 50px;
 }
 
-.yukemuriCoffeeFont img{
-    width: 300px;
-}
-
 .yukemuriCoffeeImg img{
     border-radius: 20px;
 }
@@ -274,6 +270,41 @@ header ul a:hover::after {
     background-color: #E2D5AB;
     transition: 1s;
 }
+
+.light .yukemuriCoffeeFontImg{
+    width: 300px;
+    height: 100%;
+    background-image: url("../images/coffeeLogo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.dark .yukemuriCoffeeFontImg{
+    width: 300px;
+    height: 100%;
+    background-image: url("../images/coffeeLogo_02.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.light .onsenkyouFontImg{
+    width: 300px;
+    height: 100%;
+    background-image: url("../images/logo_onsen.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.dark .onsenkyouFontImg{
+    width: 300px;
+    height: 100%;
+    background-image: url("../images/OnsenLogo_02.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
 
 /* 温泉ゾーンです */
 
