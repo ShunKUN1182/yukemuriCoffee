@@ -212,7 +212,8 @@ header ul a:hover::after {
     display: flex;
     flex-direction: column;
     width: 600px;
-    border: #888 solid 1px;
+    border: #333 solid 1px;
+    background-color: #FFFFF9;
 }
 
 .priceBox h2{
@@ -226,5 +227,65 @@ header ul a:hover::after {
 
 .priceBox h3{
     font-size: 20px;
-    margin: 20px 30px 5px;
+    margin: 30px 30px 5px;
 }
+
+.priceBox p{
+    font-size: 12px;
+    margin: 40px 30px 20px;
+}
+
+.time{
+    display: flex;
+    justify-content: center;
+    gap: 160px;
+    align-items: center;
+    width: 100vw;
+    height: 200px;
+    background-color: #E7DBB4;
+    margin: 80px 0;
+}
+
+.time h1{
+    font-size: 30px;
+}
+
+.timeText{
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+}
+
+.timeText h2{
+    font-size: 28px;
+}
+
+.timeText p{
+    font-size: 20px;
+}
+
+.openPrice h1{
+    font-size: 30px;
+    text-align: center;
+    margin: 100px auto 50px;
+}
+
+
+.openPrice table{
+    margin: 0 auto;
+}
+
+.openPrice th{
+    border: #000 solid 1px;
+    width: 400px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.openPrice td{
+    border: #000 solid 1px;
+    width: 800px;
+    padding: 3em 2em;
+    font-size: 15px;
+}
+
