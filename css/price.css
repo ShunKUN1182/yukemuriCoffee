@@ -272,7 +272,7 @@ header ul a:hover::after {
 
 
 .openPrice table{
-    margin: 0 auto;
+    margin: 0 auto 80px;
 }
 
 .openPrice th{
@@ -280,6 +280,7 @@ header ul a:hover::after {
     width: 400px;
     font-weight: bold;
     font-size: 20px;
+    margin: 0;
 }
 
 .openPrice td{
@@ -287,5 +288,115 @@ header ul a:hover::after {
     width: 800px;
     padding: 3em 2em;
     font-size: 15px;
+    margin: 0;
 }
 
+.light footer{
+    background-color: #4B2424;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dark footer{
+    background-color: #FFFFED;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.footerLogos{
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    margin: 45px 0 50px;
+}
+
+.light .onsenFooter{
+    background-image: url("../images/footerLogo_01.png");
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 55px;
+    background-position: contain;
+}
+
+.light .coffeeFooter{
+    background-image: url("../images/footerLogo_02.png");
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 60px;
+    background-position: contain;
+}
+
+.dark .onsenFooter{
+    background-image: url("../images/onsenLogoBlock.png");
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 55px;
+    background-position: contain;
+}
+
+.dark .coffeeFooter{
+    background-image: url("../images/coffeeLogoBlock.png");
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 60px;
+    background-position: contain;
+}
+
+
+.footerFont ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    gap: 60px;
+}
+
+.light .footerFont li a:link,
+.light .footerFont li a:visited{
+    color: #FFF;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.dark .footerFont li a:link,
+.dark .footerFont li a:visited{
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+
+.light .footerAddress{
+    margin: 50px auto;
+    color: #B3B0B0;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.dark .footerAddress{
+    margin: 50px auto;
+    color: #555;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+
+address{
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+
+.light{
+    color: #000;
+}
+
+.dark{
+    color: #FFF;
+}
