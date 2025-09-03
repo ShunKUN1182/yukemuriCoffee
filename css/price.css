@@ -216,6 +216,11 @@ header ul a:hover::after {
     background-color: #FFFFF9;
 }
 
+.dark .priceBox{
+    background-color: #4B2424;
+    border: #ccc solid 1px;
+}
+
 .priceBox h2{
     background-color: #D1BB75;
     width: 600px;
@@ -223,6 +228,10 @@ header ul a:hover::after {
     font-size: 26px;
     line-height: 75px;
     text-align: center;
+}
+
+.dark .priceBox h2{
+    color: #000;
 }
 
 .priceBox h3{
@@ -235,7 +244,7 @@ header ul a:hover::after {
     margin: 40px 30px 20px;
 }
 
-.time{
+.light .time{
     display: flex;
     justify-content: center;
     gap: 160px;
@@ -245,6 +254,18 @@ header ul a:hover::after {
     background-color: #E7DBB4;
     margin: 80px 0;
 }
+
+.dark .time{
+    display: flex;
+    justify-content: center;
+    gap: 160px;
+    align-items: center;
+    width: 100vw;
+    height: 200px;
+    background-color: #905455;
+    margin: 80px 0;
+}
+
 
 .time h1{
     font-size: 30px;
@@ -276,7 +297,7 @@ header ul a:hover::after {
 }
 
 .openPrice th{
-    border: #000 solid 1px;
+    /* border: #000 solid 1px; */
     width: 400px;
     font-weight: bold;
     font-size: 20px;
@@ -284,11 +305,25 @@ header ul a:hover::after {
 }
 
 .openPrice td{
-    border: #000 solid 1px;
+    /* border: #000 solid 1px; */
     width: 800px;
     padding: 3em 2em;
     font-size: 15px;
     margin: 0;
+}
+
+.light .openPrice table,
+.light .openPrice th,
+.light .openPrice td{
+    border: #000 solid 1px;
+    border-collapse: collapse;
+}
+
+.dark .openPrice table,
+.dark .openPrice th,
+.dark .openPrice td{
+    border: #fff solid 1px;
+    border-collapse: collapse;
 }
 
 .light footer{

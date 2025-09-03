@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+}
+
+.light header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFF;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+.dark header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+
+.light .onsenLogoImg a{
+    display: block;
+    background-image: url("../images/logo_onsen.png");
+    height: 80px;
+    width: 450px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 20px;
+}
+
+.dark .onsenLogoImg a{
+    display: block;
+    background-image: url("../images/OnsenLogo_02.png");
+    height: 80px;
+    width: 450px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 20px;
+}
+
+header ul{
+    display: flex;
+    list-style-type: none;
+    gap: 45px;
+    font-size: 20px;
+    font-weight: bold;
+    /* height: 100px; */
+    margin-right: 50px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+header li{
+    display: flex;
+    align-items: center;
+}
+
+header ul li a {
+    position: relative;
+}
+
+.light header ul a:link,
+.light header ul a:visited{
+    text-decoration: none;
+    color: #000;
+}
+
+.dark header ul a:link,
+.dark header ul a:visited{
+    text-decoration: none;
+    color: #FFF;
+}
+
+
+.light header ul a::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    bottom: -10%;
+    transform: scale(0, 1);
+    transform-origin: left;
+    transition: 0.5s;
+}
+
+.dark header ul a::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #FFF;
+    position: absolute;
+    left: 0;
+    bottom: -10%;
+    transform: scale(0, 1);
+    transform-origin: left;
+    transition: 0.5s;
+}
+
+
+header ul a:hover::after {
+    transform: scale(1,1);
+}
+
+
+/* ここからトグルゾーン */
+
+.toggle-button-4 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    box-sizing: content-box;
+    background-color: #00000033;
+    cursor: pointer;
+    transition: background-color .4s;
+}
+
+.toggle-button-4:has(:checked) {
+    background-color: #87121233;
+}
+
+.toggle-button-4::before {
+    position: absolute;
+    left: 5px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #000000;
+    content: '';
+    transition: left .4s;
+}
+
+.toggle-button-4:has(:checked)::before {
+    left: 50px;
+    background-color: #871212;
+}
+
+.toggle-button-4::after {
+    position: absolute;
+    left: 26px;
+    transform: translateX(-50%);
+    color: #fff;
+    font-weight: 600;
+    font-size: .9em;
+    content: '明';
+    transition: left .4s;
+}
+
+.toggle-button-4:has(:checked)::after {
+    left: 71px;
+    content: '暗';
+}
+
+.toggle-button-4 input {
+    display: none;
+}
+
+/* ここからメイン */
+
+.light main{
+    background-color: #FFFFED;
+}
+
+.dark main{
+    background-color: #4B2424;
+}
+
+.light .benner h1{
+    width: 100%;
+    height: 20vh;
+    background: linear-gradient(rgba(0,0,0,0.6)),
+    no-repeat url("../images/benner_01.png") center top / cover;
+    color: #fff;
+    text-align: center;
+    line-height: 20vh;
+}
+
+.dark .benner h1{
+    width: 100%;
+    height: 20vh;
+    background: linear-gradient(rgba(255,255,255,0.6)),
+    no-repeat url("../images/benner_01.png") center top / cover;
+    color: #000;
+    text-align: center;
+    line-height: 20vh;
+}
