@@ -204,8 +204,12 @@ header ul a:hover::after {
     width: 1000px;
 }
 
-.trainAccessHead{
+.light .trainAccessHead{
     border-bottom: #000 solid 1px;
+}
+
+.dark .trainAccessHead{
+    border-bottom: #fff solid 1px;
 }
 
 .trainAccessHead h2{
@@ -231,8 +235,14 @@ header ul a:hover::after {
     padding-bottom: 60px;
 }
 
-.mapHead{
+.light .mapHead{
     border-bottom: #000 solid 1px;
+    margin-bottom: 30px;
+}
+
+.dark .mapHead{
+    border-bottom: #fff solid 1px;
+    margin-bottom: 30px;
 }
 
 .mapHead h2{
@@ -243,9 +253,7 @@ header ul a:hover::after {
     font-weight: bold;
 }
 
-.mapHead{
-    margin-bottom: 30px;
-}
+
 
 .light footer{
     background-color: #4B2424;
