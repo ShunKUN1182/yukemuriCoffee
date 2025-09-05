@@ -220,6 +220,10 @@ header ul a:hover::after {
     font-weight: bold;
 }
 
+.trainAccessMap img{
+    width: 1000px;
+}
+
 .trainAccessFont p{
     margin: 15px 0 15px;
     line-height: 30px;
